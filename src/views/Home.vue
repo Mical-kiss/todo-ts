@@ -9,6 +9,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
+interface ages { 
+  [index:string]:number 
+} 
+const b: ages['aaa'] = 123
+const a: ages[2] = 123
+console.log(a)
+
 @Component({
   components: {
     HelloWorld,
